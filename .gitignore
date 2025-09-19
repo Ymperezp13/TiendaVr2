@@ -1,0 +1,127 @@
+# =========================
+# OS / IDE
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.code-workspace
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+pip-log.txt
+
+# =========================
+# Env (raíz + subcarpetas)
+# =========================
+.env
+.env.*            # .env.local, .env.development, etc.
+*.env.local
+!.env.example     # mantiene archivos de ejemplo versionados
+
+# =========================
+# Node / React (Vite/CRA)
+# =========================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.cache/
+frontend/.parcel-cache/
+frontend/.eslintcache
+frontend/.turbo/
+frontend/.next/
+frontend/.nuxt/
+frontend/.vite/
+# Vite cache dentro de node_modules
+frontend/node_modules/.vite/
+
+# Lockfiles: elige UNO en tu repo; si usas otro, ignora el resto
+# (descomenta si quieres forzar uno específico)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# =========================
+# Python / Flask
+# =========================
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.tox/
+.coverage
+htmlcov/
+build/
+dist/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+backend/.pytest_cache/
+backend/__pycache__/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+backend/.venv/
+backend/venv/
+backend/env/
+
+# =========================
+# Flask specifics
+# =========================
+# Instancia local (config/DB locales no versionadas)
+backend/instance/
+instance/
+
+# Archivos temporales de Werkzeug/Flask
+backend/*.pid
+backend/*.prof
+
+# =========================
+# Bases de datos (SQLite)
+# =========================
+*.db
+*.db-shm
+*.db-wal
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+
+# Si deseas versionar un "seed" de ejemplo, colócalo como:
+# backend/seed/example.db  y cámbiale el nombre y descomenta la línea de abajo:
+# !backend/seed/example.db
+
+# =========================
+# Frontend frameworks/hostings
+# =========================
+# Netlify / Vercel / Render
+.netlify/
+.vercel/
+render.yaml.local
+
+# =========================
+# Otros binarios / temporales
+# =========================
+*.orig
+*.rej
+*.swp
+*.swo
+*.tmp
+.tmp/
+temp/
+.cache/
+.parcel-cache/
+coverage/
